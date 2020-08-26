@@ -1,6 +1,6 @@
 /*:
-@author LunaTechs - Kino
-@plugindesc -------------------------------------------------------------------------
+@author LunaTechs * Kino
+@plugindesc *************************************************************************
 
 @target MV MZ
 
@@ -35,6 +35,7 @@ Version: 1.00
                    *****,    ,#&&&&&&&&&&&&&&&&&&&*  .                
                        .*******,.            .,*,                     
                                   .....                               
+
 
 MIT License
 Copyright (c) 2020 LunaTechsDev

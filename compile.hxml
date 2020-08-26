@@ -24,23 +24,29 @@
 
 # Note you can call an hxml file inside an hxml file for build purposes.
 # For Compiling Separate JavaScript Files
---macro macros.MacroTools.includeJsLib("./src/LunaSeparatorsParams.js")
+
 -main LunaSeparators
 
 --each
 
 --next
--js dist/==================================.js
+--macro macros.MacroTools.includeJsLib("./src/LunaSeparatorsParamsBlock.js")
+-js dist/=============================.js
 --next
--js dist/----------------------------------.js
+--macro macros.MacroTools.includeJsLib("./src/LunaSeparatorsParams.js")
+-js dist/-----------------------------.js
 --next
--js dist/~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.js
+--macro macros.MacroTools.includeJsLib("./src/LunaSeparatorsParamsSquiggle.js")
+-js dist/~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.js
 --next
--js dist/**********************************.js
+--macro macros.MacroTools.includeJsLib("./src/LunaSeparatorsParamsStar.js")
+-js dist/*****************************.js
 --next
--js dist/@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.js
+--macro macros.MacroTools.includeJsLib("./src/LunaSeparatorsParamsAt.js")
+-js dist/@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.js
 --next
--js dist/$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$.js
+--macro macros.MacroTools.includeJsLib("./src/LunaSeparatorsParamsDollar.js")
+-js dist/$$$$$$$$$$$$$$$$$$$$$$$$$$$$$.js
 
 
 --cmd haxe -D gamePath=games/KinoCreates --run CleanJs
