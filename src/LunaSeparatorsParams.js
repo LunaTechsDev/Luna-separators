@@ -2,6 +2,7 @@
 @author LunaTechs - Kino
 @plugindesc -------------------------------------------------------------------
 
+@target MV MZ
 
 @help
 Version: 1.00
