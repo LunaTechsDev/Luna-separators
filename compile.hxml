@@ -17,20 +17,30 @@
 # Generate Documentation
 # -D doc_gen
 # -D js_classic
--dce full
+# -dce full
 
 # RM Version for Conditional Compilation
 -D compileMV
 
 # Note you can call an hxml file inside an hxml file for build purposes.
 # For Compiling Separate JavaScript Files
+--macro macros.MacroTools.includeJsLib("./src/LunaSeparatorsParams.js")
+-main LunaSeparators
 
 --each
 
 --next
--js dist/TestPlugin.js
-# You can include plugin parameters as a macro in your compile.hxml
---macro macros.MacroTools.includeJsLib("./src/TestPluginParams.js")
--main TestPlugin
+-js dist/==================================.js
+--next
+-js dist/----------------------------------.js
+--next
+-js dist/~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.js
+--next
+-js dist/**********************************.js
+--next
+-js dist/@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.js
+--next
+-js dist/$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$.js
+
 
 --cmd haxe -D gamePath=games/KinoCreates --run CleanJs
